@@ -13,7 +13,7 @@ def voice_to_text():
         audio = recognizer.listen(source)
 
     try:
-        text = recognizer.recognize_google(audio, language="en-IN")  # Use "hi-IN" for Hindi
+        text = recognizer.recognize_google(audio, language="en-IN")  # Use "hi-IN" for Hindi text.
         print("You said:", text)
         return text
     except sr.UnknownValueError:
